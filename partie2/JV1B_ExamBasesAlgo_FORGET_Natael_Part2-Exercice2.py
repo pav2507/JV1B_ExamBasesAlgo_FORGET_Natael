@@ -13,11 +13,11 @@ if(ordre==0):
     #position vertical
     print("vertical")
     posV=input()
-    for a in range (0,3):
-        if(a==posV):
-            for b in range (0,3):
-                if(b==posH):
-                    print("X")
+    for a in range (1,4):
+        if(a==posH):
+            for b in range (1,4):
+                if(b==posV):
+                    print("X",end='')
                 else:
                     print("_",end='')
         else:

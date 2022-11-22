@@ -3,15 +3,14 @@
 import random
 
 liste=[1,2,5,4,3]
-plusGrand=0
+plusGrand = liste[0]
 
-for a in range (0,len(liste)):
-    for b in range(a, len(liste)):
-        if(plusGrand<liste[a]):
-            plusGrand = liste[a]
-            
-    stockage=liste[b]
-    liste[4]=stock
-    liste[2]=stockage
-
-print(plusGrand)
+for n in range(0,len(liste)):
+    a=liste[n]
+    for i in range(0+n,len(liste)):
+        if liste[i]<a:
+            a=liste[n]
+            liste[n]=liste[i]
+            liste[i]=a
+        
+print(liste)
